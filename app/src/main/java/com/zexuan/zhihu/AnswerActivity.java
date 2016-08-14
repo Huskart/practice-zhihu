@@ -3,9 +3,9 @@ package com.zexuan.zhihu;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.zexuan.zhihu.views.IAnswerView;
 
 import butterknife.ButterKnife;
+import zhihu.zexuan.com.logical.IAnswerView;
 
 public class AnswerActivity extends AppCompatActivity implements IAnswerView {
 
