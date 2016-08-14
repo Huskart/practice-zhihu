@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="#fff"
+    android:padding="5dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/story_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="3dp"
+        android:background="@color/white"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp">
+
+            <RelativeLayout
+                android:id="@+id/top_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/from_avatar"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                     />
+
+                <TextView
+                    android:id="@+id/actor_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/from_avatar"
+                     />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/vote_num_tv"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:background="#ffb1d4fe"-->
+                    <!--android:paddingBottom="2dp"-->
+                    <!--android:paddingLeft="4dp"-->
+                    <!--android:paddingRight="4dp"-->
+                    <!--android:paddingTop="2dp"-->
+                    <!--android:text="359"-->
+                    <!--android:textColor="@color/primary_blue" />-->
+            </RelativeLayout>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/hd_image"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/test"
+                android:layout_below="@+id/top_ll"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hd_image"
+                android:layout_marginTop="8dp"
+                android:text="旅游的时候你遇到过那些搞笑的事情？"
+                android:textColor="@color/black"
+                android:maxLines="2"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/story_item_content_ll"
+                android:layout_below="@+id/title_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:id="@+id/story_content_tv"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:maxLines="4"
+                    android:text="某天正去某渔村吃海鲜某沿海城镇公路开车中，突然右前方50米一电瓶车大叔放后座上的一纸盒掉地上了，他本人并没有发现，盒子上写的海虾。于是我们一车三人摇下车窗，车子慢慢减速靠近，然后冲着..." />
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_below="@+id/story_content_tv"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/voteup_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="92 赞同 ·"/>
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_below="@+id/story_content_tv"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/voteup_count_tv"
+                    android:id="@+id/comment_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 36 评论 ·" />
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_below="@+id/story_content_tv"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/comment_count_tv"
+                    android:id="@+id/attention_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 关注问题"  />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
