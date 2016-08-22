@@ -9,6 +9,8 @@ import zhihu.zexuan.com.model.story.Data;
  * Created by Zexuan on 2016/4/8.
  */
 public interface IStoryListView<T> {
+    void initView();
+
     void askQuestion();
 
     void writeDraft();

@@ -2,6 +2,7 @@ package com.zexuan.zhihu.present;
 
 import android.util.Log;
 
+import com.nostra13.universalimageloader.utils.L;
 import com.squareup.okhttp.Interceptor;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
@@ -74,6 +75,7 @@ public class StoryPresenter {
 
                     @Override
                     public void onNext(StoryData storyData) {
+                        Log.i("zexuan" , storyData.getData().size() + " size --- paging " + storyData.getPaging().getPrevious() + " " + storyData.getPaging().getNext());
                         List<Data> list = storyData.getData();
                         storyListView.loadDataToList(list); //把数据加载到UI
                     }
