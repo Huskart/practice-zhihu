@@ -5,4 +5,7 @@ package com.zexuan.zhihu;
  */
 public class Constants {
     public static final String AUTHORIZATION = "Bearer ABBKEDr4OAgMAAAAybHTVwAQShA6-DgIDAAAAGACVU3JsdNXaFyRKvbBVnyQrLA2gHFHUh6eTzyZPKCzn3YMXoesuyAJ8iRQcME__w==";
+    public static final String AUTHORIZATION2= "Bearer ABBKEDr4OAgMAAAAybHTVwAQShA6-DgIDAAAAGACVU3JsdNXaFyRKvbBVnyQrLA2gHFHUh6eTzyZPKCzn3YMXoesuyAJ8iRQcME__w==";
 }
+
+
